@@ -1,0 +1,15 @@
+syntax = "proto3";
+package jeff.jeff;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "jeff/x/jeff/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "jeff/x/jeff/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
